@@ -38,3 +38,17 @@ p{
     margin: auto;
     font-family: 'poppins', sans-serif;
 }
+
+
+@media screen and (max-width: 800px) {
+    h1 {
+      font-size: 2.8rem; 
+      line-height: 0.9;
+      letter-spacing: -0.015em;
+      margin-bottom: 16px;
+    }
+
+    p{
+        font-size: 0.9rem;
+    }
+  }
