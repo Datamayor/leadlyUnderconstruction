@@ -6,12 +6,16 @@
 }
 
 body{
-    max-width: 1200px;
     background: linear-gradient(90deg, #E7F6F8, #FBF6F1);
     display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
 }
 
 div{
+    width: 100%;
+    margin: auto;
     align-items: center;
     justify-content: center;
 }
@@ -21,9 +25,14 @@ h1{
     margin: auto;
     font-family: 'poppins', sans-serif;
     font-weight: 800;
+    font-size: 4.5rem;
+    line-height: 1;
+    letter-spacing: -0.045em;
+    margin-bottom: 20px;
 }
 
 p{
+    font-size: 1.15rem;
     text-align: center;
     margin: auto;
     font-family: 'poppins', sans-serif;
