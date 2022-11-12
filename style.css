@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body{
+    max-width: 1200px;
+    background: linear-gradient(90deg, #E7F6F8, #FBF6F1);
+    display: flex;
+}
+
+div{
+    align-items: center;
+    justify-content: center;
+}
+ 
+h1{
+    text-align: center;
+    margin: auto;
+    font-family: 'poppins', sans-serif;
+    font-weight: 800;
+}
+
+p{
+    text-align: center;
+    margin: auto;
+    font-family: 'poppins', sans-serif;
+}
