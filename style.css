@@ -39,7 +39,18 @@ p{
     font-family: 'poppins', sans-serif;
 }
 
+button{
+    width: 200px;
+    border: 4px;
+    justify-content: center;
+    text-align: center;
+}
 
+input{
+    width:300px;
+    justify-content: center;
+    border: 5px;
+}
 @media screen and (max-width: 800px) {
     h1 {
       font-size: 2.8rem; 
