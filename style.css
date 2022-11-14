@@ -94,6 +94,13 @@ button:hover{
         margin-bottom: 10px;
     }
 
+    .leadlylogo{
+        width: 40px;
+        position: absolute;
+        left: 20px;
+        top: 20px;
+    }
+
     input{
         border-radius: 12px;
         font-size: 6px;
