@@ -1,31 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/x-icon" href="./images/logo-removebg-preview.png">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="./images/logo-removebg-preview.png"
+    />
     <title>Leadly</title>
-
-</head>
-<body>
+  </head>
+  <body>
     <div>
-        <div class="container1" ><img class="leadlylogo" src="./images/leadly__2-removebg-preview.png" alt=""></div>
-        <h1> We're under <br> construction</h1>
-        <p>Check back for an update soon.</p>
+      <div class="container1">
+        <img
+          class="leadlylogo"
+          src="./images/leadly__2-removebg-preview.png"
+          alt=""
+        />
+      </div>
+      <h1>
+        We're under <br />
+        construction
+      </h1>
+      <p>Check back for an update soon.</p>
 
-        <div class="container">
-            <form action="">
-             <label for="">
-                 <input type="gmail" placeholder="@gmail.com" class="gmail" id="gmail">
-             </label>
-            </form>
-         <button> Want to stay for updates?</button>
-     </div>
+      <div class="container">
+        <form onsubmit="sendEmail(); reset(); return false;">
+          <label for="">
+            <input
+              type="gmail"
+              placeholder="@gmail.com"
+              class="email"
+              id="email"
+            />
+          </label>
+
+          <button type="submit">Want to stay for updates?</button>
+        </form>
+      </div>
     </div>
-</body>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+      function sendEmail() {
+        Email.send({
+          Host: "smtp.gmail.com",
+          Username: "oyebamijiboluwatiwi1@gmail.com",
+          Password: "Boluwatiwi12&",
+          To: "oyebamijiboluwatiwi@gmail.com",
+          From: document.getElementById("email").value,
+          Subject: "new contact email enquiry",
+          Body: "And this is the body",
+        }).then((message) => alert(message));
+      }
+    </script>
+  </body>
 </html>
