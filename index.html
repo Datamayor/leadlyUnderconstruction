@@ -34,11 +34,12 @@
       <p>Check back for an update soon.</p>
 
       <div class="container">
-        <form onsubmit="sendEmail(); reset(); return false;">
+        <form action="https://formsubmit.co/oyebamijiboluwatiwi@gmail.com" method="POST">
           <label for="">
             <input
               type="email"
               placeholder="@gmail.com"
+              name="email"
               class="email"
               id="email"
             />
@@ -48,20 +49,20 @@
         </form>
       </div>
     </div>
-    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <!-- <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script>
       function sendEmail() {
         Email.send({
             securetoken:" 7b9a9114-700a-4144-a79e-b7591f48b6cd",
-        //   Host: "smtp.elasticemail.com",
-        //   Username: "oyebamijiboluwatiwi1@gmail.com",
-        //   Password: "118CB55D57C74026E4F514CE5D9575D150A9",
+          Host: "smtp.elasticemail.com",
+          Username: "oyebamijiboluwatiwi1@gmail.com",
+          Password: "118CB55D57C74026E4F514CE5D9575D150A9",
           To: "oyebamijiboluwatiwi@gmail.com",
           From: document.getElementById("email").value,
           Subject: "New contact email enquiry",
           Body: "And this is the body",
         }).then((message) => alert(message is sent successfully));
       }
-    </script>
+    </script> -->
   </body>
 </html>
