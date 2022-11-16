@@ -95,10 +95,10 @@ button:hover{
     }
 
     .leadlylogo{
-        width: 80px;
+        width: 140px;
         position: absolute;
-        left: 6px;
-        top: -10px;
+        left: -16px;
+        top: -40px;
     }
 
     input{
