@@ -39,6 +39,12 @@ html {
 
 }
 
+.business::first-line{
+    color: #0BCFAC;
+    font-weight: 700;
+    font-family: poppins;
+}
+
 ul,
 li{
     list-style: none;
